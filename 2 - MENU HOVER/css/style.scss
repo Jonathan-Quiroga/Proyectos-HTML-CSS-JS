@@ -8,6 +8,8 @@
 
 body{
     background-color: #3d4152;
+    box-sizing: border-box;
+
 }
 .navigation{
     position: fixed;
@@ -69,6 +71,7 @@ body{
             height: 60px;
             padding: 0 10px;
             transition: .5s; //es la transicion para que el elemento se salga del menu
+          
             &.active{
                 transform: translateX(30px); // con esto le indicamos que se mueva 30px
                 a{
@@ -127,6 +130,7 @@ body{
                     visibility: hidden;
                     transition: .5s;
                 }
+                
             }
 
         }
@@ -156,4 +160,13 @@ body{
         visibility: visible;
 
     }
+}
+
+.contenido section{
+    width: 100vw;
+    height: 100vh;
+    font-size: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
