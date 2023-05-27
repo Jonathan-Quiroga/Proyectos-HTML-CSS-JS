@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+}
+.contenedor {
+	max-width: 1200px;
+	width: 90%;
+    
+	margin: auto;
+	color: #fff;
+    
+}
+
+/* --- --- CONTENEDOR PRINCIPAL --- --- */
+
+
+
+/* --- --- CAROUSEL --- --- */
+
+.carousel_contenedor{
+	position: relative;
+
+}
+.carousel_anterior,
+.carousel_siguiente{
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background-color: transparent;
+	color: #fff;
+	opacity: 20%;
+	font-size: 25px;
+}
+.carousel_anterior:hover,
+.carousel_siguiente:hover{
+	opacity: 100%;
+}
+
+.carousel_anterior{
+	left: -30px;
+	
+}
+.carousel_siguiente{
+	right: -30px;
+}
+/* quitar el scroll */
+
+.carousel_lista{
+	overflow: hidden;
+}
+
+/* estilo a los indicadores (glider dot la vemos con consola,
+ es la clase que se activa por defecto con la libreria)*/
+
+.carousel_indicadores .glider-dot{
+	display: block;
+	width: 30px;
+	height: 4px;
+	background-color: #fff;
+	opacity: .2;
+	border-radius: 0; /* se coloca 0 por que por defecto traen border radius y se lo vamos a quitar */
+}
+.carousel_indicadores .glider-dot:hover{
+	opacity: .5;
+}
+.carousel_indicadores .glider-dot.active{
+	opacity: 1;
+}
