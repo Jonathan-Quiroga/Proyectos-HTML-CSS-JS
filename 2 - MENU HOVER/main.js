@@ -19,3 +19,6 @@ list.forEach((item)=>
 item.addEventListener('click', activarLink)
 )
 
+
+
+
