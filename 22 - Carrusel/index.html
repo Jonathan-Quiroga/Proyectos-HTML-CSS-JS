@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Carousel / Slider con Glider.js</title>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="contenedor">
+		<main class="contenido-principal">
+			<img src="https://images.pexels.com/photos/6056456/pexels-photo-6056456.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Dome of the German Bundestag" class="contenido-principal__imagen">
+			<div class="contenido-principal__contenedor">
+				<h1 class="contenido-principal__titulo">VIDA SALVAJE</h1>
+				<p class="contenido-principal__resumen">
+					La vida animal es un fascinante mundo repleto de diversidad y maravillas. Desde las majestuosas criaturas que habitan las profundidades del océano hasta los ágiles corredores que exploran las vastas llanuras, cada especie tiene su propio papel en el ecosistema global.
+				</p>
+				
+			</div>
+		</main>
+
+		<div class="carousel">
+			<div class="carousel__contenedor">
+				<button aria-label="Anterior" class="carousel__anterior">
+					<i class="fas fa-chevron-left"></i>
+				</button>
+
+				<div class="carousel__lista">
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/247502/pexels-photo-247502.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Rock and Roll Hall of Fame">
+						<p>Rock and Roll Hall of Fame</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/792381/pexels-photo-792381.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Constitution Square - Tower I">
+						<p>Constitution Square - Tower I</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/2295744/pexels-photo-2295744.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Empire State Building">
+						<p>Empire State Building</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/4005190/pexels-photo-4005190.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Harmony Tower">
+						<p>Harmony Tower</p>
+					</div>
+	
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/15669209/pexels-photo-15669209/free-photo-of-paisaje-naturaleza-pajaro-animal.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Empire State Building">
+						<p>Empire State Building</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/14918399/pexels-photo-14918399.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Harmony Tower">
+						<p>Harmony Tower</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/134058/pexels-photo-134058.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Empire State Building">
+						<p>Empire State Building</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/11870780/pexels-photo-11870780.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Harmony Tower">
+						<p>Harmony Tower</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/12914823/pexels-photo-12914823.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Empire State Building">
+						<p>Empire State Building</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/14918316/pexels-photo-14918316.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Harmony Tower">
+						<p>Harmony Tower</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/236599/pexels-photo-236599.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Empire State Building">
+						<p>Empire State Building</p>
+					</div>
+					<div class="carousel__elemento">
+						<img src="https://images.pexels.com/photos/15579089/pexels-photo-15579089/free-photo-of-naturaleza-animal-sentado-arbol.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Harmony Tower">
+						<p>Harmony Tower</p>
+					</div>
+					
+				</div>
+
+				<button aria-label="Siguiente" class="carousel__siguiente">
+					<i class="fas fa-chevron-right"></i>
+				</button>
+			</div>
+
+			<div role="tablist" class="carousel__indicadores"></div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="./index.js"></script>
+</body>
+</html>
