@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Juego de Velocidad de Tipeo</h1>
+
+        <!-- pantalla de inicio -->
+
+        <div id="inicio">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhGkI2tCx2tcawYrtYDMAA24Fao1Bpu6TexA89_0oUG3AzM9-JTDPHd2WabAsqEkbQmsY&usqp=CAU" alt="">
+            <p>¿Cuántas palabras puedes escribir en 30 segundos?</p>
+            <button class="button" onclick="comenzarJuego()">COMENZAR JUEGO</button>
+        </div>
+
+        <!-- pantalla de juego -->
+        <div class="juego" id="juego">
+
+            <div id="tiempo" class="tiempo">30</div>
+            <div id="palabra" class="palabra_estilo">PALABRA</div>
+            <input type="text" placeholder="Escribe aquí..." id="palabra_ingresada" class="entrada" onkeyup="comparar()">
+            <div id="registro" class="listado">
+                <h3>palabras tipedas</h3>
+                
+
+            </div>
+        </div>
+
+        <!-- pantalla final -->
+        <div id="final" class="estilo_final">
+            <p class="texto_final">palabras tipeadas en un minuto</p>
+            <div class="estilo_cantidad_final" id="cantidad_final">
+                30
+            </div>
+            <a href="index.html" class="button">JUGAR DE NUEVO</a>
+        </div>
+    </div>
+    
+    <script src="./main.js"></script>
+</body>
+</html>
